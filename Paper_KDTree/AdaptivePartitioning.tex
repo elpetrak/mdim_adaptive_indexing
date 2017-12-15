@@ -1,0 +1,53 @@
+\section{Multidimensional Clustering}
+\label{sec:adaptive_partitioning}
+
+In this section we introduce the multidimensional database cracking 
+architecture along with the necessary data structures and algorithms.
+
+\subsection{Definitions and Notations}
+\label{subsec:clustering}
+
+
+A database administrator (DBA) identifies a set of $\mathtt{k}$ columns from a
+relation $\mathtt{R}$ where multidimensional cracking should be 
+considered\footnote{We assume the presence of a DBA for simplicity,
+although we will discuss other options later on the paper.
+The selection and the order of the $\mathtt{k}$ columns is orthogonal
+to this work.}.
+A copy is created for each one of the $\mathtt{k}$ columns.
+
+We define a \textcolor{red}{\emph{cluster map}} as a subset $\mathtt{C^k=\{c_1,c_2,\ldots,c_k\}}$ of the copies of
+$\mathtt{k}$ columns from a relation $\mathtt{R}$ with $\mathtt{n}$ rows. 
+Values of $\mathtt{k}$ columns in the same position of the cluster map, belong to the same relational tuple.
+A 
+$\mathtt{k}$-dimensional query
+\begin{center}
+$\mathtt{Q^k = \{q_1,q_2,\ldots,q_k\ |\ q_i = [a_i, b_i],\ i=1,\ldots,k\}}$ 
+\end{center}
+over $\mathtt{C^k}$ returns all rows $\mathtt{r_j}$ such that
+\begin{center}
+$\mathtt{r_j = \{v_{j_i}\ |\ v_{j_i} \in q_i,\ i=1,\ldots,k\}}$
+\end{center}
+where $\mathtt{1 \leq j \leq n}$ and $\mathtt{v_{j_i}}$ is the $\mathtt{j}$-th value of $\mathtt{c_i}$
+\footnote{For simplicity, we assume that a multidimensional query includes double range predicates on all $\mathtt{k}$ dimensions.
+We will relax this restriction later on the paper, showing how we can handle queries with different types of predicates on a subset of $\mathtt{k}$ attributes.}.
+
+After a cluster map is created it is used to speed up queries that access the $\mathtt{k}$ columns.
+Each query triggers the physical reorganization (cracking) of the cluster map based on the query predicates.
+%In the next section we describe how the reorganization of the cluster map takes place.
+Here is a formal definition of multi-dimensional database cracking.
+
+\begin{flushleft}
+\begin{mydef}
+Multidimensional database cracking is the clustering of 
+$\mathtt{k}$ columns based on the predicates of a $\mathtt{k}$-dimensional
+range query $\mathtt{Q^k}$.
+\end{mydef}
+\end{flushleft}
+
+
+
+\input{Mcrack}
+\input{KDTree}
+\input{Stopcrack}
+

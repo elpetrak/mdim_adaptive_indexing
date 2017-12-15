@@ -1,0 +1,91 @@
+\documentclass{sig-alternate}
+\usepackage{graphicx}
+\usepackage{multiFloats}
+\usepackage{url}
+\usepackage{wrapfig}
+\usepackage{algorithm}
+\usepackage[noend]{algorithmic}
+\usepackage{eqparbox}
+\usepackage{array}
+\usepackage{float}
+\usepackage{listings}
+\usepackage[flushleft]{threeparttable}
+\usepackage{booktabs}
+%\usepackage{mathtools}
+%\usepackage{caption}
+\usepackage{subfigure}
+\usepackage{color}
+%\usepackage[T1]{fontenc}
+%\usepackage{pslatex}
+\usepackage{natbib}
+\usepackage{xcolor}
+%\usepackage{amsthm}
+\newcommand\todo[1]{\textcolor{red}{#1}}
+\newtheorem{mydef}{Definition}[section]
+
+\pdfpagewidth=8.5in
+\pdfpageheight=11in
+
+%\newcommand{\mal}{\tt}
+%\newcommand{\sql}{\sf}
+%\newcommand{\MAL}[1]{{\mal{}#1}}
+%\newcommand{\SQL}[1]{{\sql{}#1}}
+
+\renewcommand{\labelenumi}{(\arabic{enumi})}
+
+\renewcommand{\textfraction}{0.0}
+\renewcommand{\bottomfraction}{1.0}
+\renewcommand{\topfraction}{1.0}
+\renewcommand{\dbltopfraction}{1.0}
+\renewcommand{\bibfont}{\scriptsize}
+\renewcommand{\bibsep}{0.05cm}
+%\setlength{\textfloatsep}{1ex plus1pt minus1pt}
+%\setlength{\dbltextfloatsep}{1ex plus1pt minus1pt}
+\renewcommand\algorithmiccomment[1]{%
+  \hfill//\ \eqparbox{COMMENT}{#1}%
+}
+\newcommand\LONGCOMMENT[1]{%
+  \hfill//\ \begin{minipage}[t]{\eqboxwidth{COMMENT}}#1\strut\end{minipage}%
+}
+
+
+%\usepackage{pslatex} 
+%\linespread{0.97}
+
+\pagestyle{empty}
+\begin{document}
+
+%\title{Adaptive Multidimensional Partitioning}
+%\title{Shuffle Exchanging Clustering}
+\title{Multidimensional Cracking in Main-memory Column-stores}
+
+\numberofauthors{3}
+\author{
+\alignauthor Eleni Petraki\\
+       \affaddr{CWI Amsterdam}\\
+       \email{petraki@cwi.nl}
+\alignauthor Lefteris Sidirourgos\\
+       \affaddr{CWI Amsterdam}\\
+       \email{lsidir@cwi.nl}
+\alignauthor Martin Kersten\\
+      \affaddr{CWI Amsterdam}\\
+       \email{kersten@cwi.nl}
+}
+
+\maketitle
+
+\input{Abstract}
+\input{Introduction}
+\input{Background}
+\input{AdaptivePartitioning}
+\input{Qevaluation}
+\input{Experiments}
+\input{RelatedWork}
+\input{Conclusions}
+
+%\scriptsize{% now done in makePDF.sh
+\bibliographystyle{abbrv}
+\bibliography{references}
+%}
+
+\end{document}

@@ -1,0 +1,12 @@
+Sources_KDTree/treenodes*
+Sources_KDTree/bin/*
+Sources_KDTree/Experiments/plot_workloads/output/*
+Sources_KDTree/Experiments/vary_selectivity/output/*
+Sources_KDTree/Experiments/vary_dimensions/output/*
+Sources_KDTree/Experiments/plot_kdtree/output/*
+Paper_KDTree/top.log
+Paper_KDTree/top.aux
+Paper_KDTree/top.bbl
+Paper_KDTree/top.blg
+Paper_KDTree/top.pdf
+figures/*.pdf

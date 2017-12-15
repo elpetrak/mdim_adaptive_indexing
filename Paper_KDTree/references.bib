@@ -1,0 +1,931 @@
+@STRING{ACCEPTED = {Accepted for publication}}
+@STRING{APPEAR = {To appear}}
+@STRING{ACM = {ACM Press}}
+@STRING{ACMAD = {New York, USA}}
+@STRING{ADDWES = {Addison-Wesley}}
+@STRING{ADDWESAD = {Reading, MA, USA}}
+@STRING{ADDWESAD-DE = {Bonn, Paris, Reading}}
+@STRING{AISCA = {Proc.\ of the Int'l Symp.\ on Computer Architecture}}
+@STRING{BENCUM = {Benjamin/Cummings}}
+@STRING{BENCUMAD = {Redwood City, CA, USA}}
+@STRING{BNCOD = {Proc.\ of the British National Conference on Databases}}
+@STRING{CACM = {Communications of the ACM}}
+@STRING{CIKM = {Proc.\ of the Int'l Conf.\ on Information and Knowledge Management}}
+@STRING{CAI = {Computers and Artificial Intelligence}}
+@STRING{CL-CIT = {Crellin Laboratory, California Institute of Technology}}
+@STRING{COMAD = {Int'l.\ Conference on Management of Data}}
+@STRING{COMP = {IEEE Computer}}
+@STRING{COMPCON = {COMPCON Digest of Papers}}
+@STRING{COOPIS = {Proc.\ of the Int'l.\ Conf.\ on Cooperative Information Systems}}
+@STRING{CWI = {CWI}}
+@STRING{CWIAD = {Amsterdam, The Netherlands}}
+@STRING{CWI-QUATERLY = {CWI Quarterly}}
+@STRING{LNAI = {Lecture Notes in Artificial Intelligence}}
+@STRING{DEBULL = {IEEE Data Eng.\ Bull.}}
+@STRING{UVA = {Universiteit van Amsterdam}}
+@STRING{LINKOP = {Link{\"o}ping University}}
+@STRING{UVAAD = {Amsterdam, The Netherlands}}
+@STRING{DEXA = {Proc.\ of the Int'l.\ Workshop on Database and Expert Systems Application}}
+@STRING{RTDB = {Proc.\ of the Int'l.\ Workshop on Real-Time Databases, Issues and Applications}}
+@STRING{DOOD = {Proc.\ of the Int'l.\ Conf.\ on Deductive and Object-Oriented Databases}}
+@STRING{DPDB = {Distributed and Parallel Databases}}
+@STRING{IS = {Information Systems}}
+@STRING{KDD = {Proc.\ of the Int.'l\ Conference on Knowledge Discovery and Data Mining}}
+@STRING{DPDS = {Proc.\ of the Int'l.\ Symp.\ on Databases in Parallel and Distr.\ Systems}}
+@STRING{EATCS = {EATCS Monographs on Theoretical Computer Science}}
+@STRING{EDBT = {Proc.\ of the Intl.\ Conf.\ on Extending Database Technology}}
+@STRING{EUROPAR = {Proc.\ of the European Conf.\ on Parallel Processing}}
+@STRING{FODO = {Proc.\ of the Int'l.\ Conf.\ on Foundation on Data Organization and Algorithms}}
+@STRING{FRONT = {Proc.\ Symp.\ on the Frontiers of Massively Parallel Computation}}
+@STRING{GP = {Proc.\ Conf.\ on Genetic Programming}}
+@STRING{HPCA = {Int'l.\  Symp.\ on High Performance Computer Architecture}}
+@STRING{HUBINFO = {Hum\-boldt-Uni\-ver\-si\-t\"{a}t zu Berlin, Institut f\"{u}r Informatik}}
+@STRING{HUBAD = {Berlin, Germany}}
+@STRING{IBMALMADEN = {IBM Almaden Research Center}}
+@STRING{IBMALMADENAD = {San Jose, CA, USA}}
+@STRING{IADT = {Proc.\ Int'l.\ Workshop on Issues and Applications of Database Technology}}
+@STRING{_ICDE = {Proc.\ of the IEEE Int'l.\ Conf.\ on Data Engineering}}
+@STRING{ICDE = {ICDE}}
+@STRING{ICDT = {Proc.\ of the Int'l.\ Conf.\ on Database Theory}}
+@STRING{IDEAS = {Proc.\ of the Int'l.\ Database Engineering and Applications Symposium (IDEAS)}}
+@STRING{INTEL = {Intel Technology Journal}}
+@STRING{IEEE = {IEEE Computer Society Press}}
+@STRING{IEEEAD = {Los Alamitos, CA, USA}}
+@STRING{INFOSPEC = {Informatik Spektrum}}
+@STRING{INVTALK = {Invited Talk}}
+@STRING{JOCP = {Journal of Computational Physics}}
+@STRING{JODL = {International Journal on Digital Libraries}}
+@STRING{JOTA = {Journal on Optimization Theory and Applications}}
+@STRING{KLUWER = {Kluwer Academic Publishers}}
+@STRING{KLUWERAD = {Dordrecht, The Netherlands}}
+@STRING{LNCS = {Lecture Notes in Computer Science}}
+@STRING{MCGRAW = {McGraw-Hill, Inc.}}
+@STRING{MCGRAWAD = {New York, San Francisco, Washington, DC, USA}}
+@STRING{MICRO = {IEEE Micro}}
+@STRING{MICROREP = {Microprocessor Report}}
+@STRING{MITPRESS = {MIT Press}}
+@STRING{MITPRESSAD = {Cambridge, MA, USA}}
+@STRING{MORKAU = {Morgan Kaufmann}}
+@STRING{MORKAUAD = {San Mateo, CA, USA}}
+@STRING{OLDENB = {R.\ Oldenbourg Verlag}}
+@STRING{OLDENBAD = {M\"{u}nchen, Wien}}
+@STRING{OREILLY = {O'Reilly}}
+@STRING{OREILLYAD = {Sebastopol, CA, USA}}
+@STRING{ORSAJOC = {ORSA Journal on Computing}}
+@STRING{PAINFO = {Universit\"{a}t Passau}}
+@STRING{PARLE = {Proc.\ of the Int'l.\ Conf.\ on Parallel Architectures and Languages in Europe}}
+@STRING{PDIS = {Proc.\ of the Int'l.\ Conf.\ on Parallel and Distr.\ Inf.\ Sys.}}
+@STRING{PODS = {Proc.\ of the ACM SIGACT-SIGMOD-SIGART Symposium on Principles of Database Systems}}
+@STRING{PREHAL = {Prentice Hall}}
+@STRING{PREHALAD = {Englewood Cliffs, NJ, USA}}
+@STRING{PVMMPI = {Proc.\ of the European PVM-MPI Users' Group Meeting}}
+@STRING{RIDE-TQP = {Proc.\ Research Issues on Data Eng.: Transaction and Query Processing}}
+@STRING{SAHUBINFO = {Studienarbeit, Humboldt-Uni\-ver\-si\-t\"{a}t zu Berlin, Institut f\"{u}r Informatik}}
+@STRING{SCIENCE = {Science}}
+@STRING{SIAMJAM = {SIAM Journal on Applied Mathematics}}
+@STRING{SIGMOD_ = {Proc.\ of the ACM SIGMOD Int'l.\ Conf. on Management of Data}}
+@STRING{SIGMOD = {SIGMOD}}
+@STRING{SIGMODREC = {ACM SIGMOD Record}}
+@STRING{SPRINGER = {Springer-Verlag}}
+@STRING{SPRINGERAD = {Berlin, New York, etc.}}
+@STRING{STANFORDCS = {Stanford University, Computer Science Department}}
+@STRING{SUBMITTED = {Submitted for publication}}
+@STRING{SURVEY = {ACM Computing Surveys}}
+@STRING{TALK = {Talk}}
+@STRING{TKDE = {IEEE Trans.\ on Knowledge and Data Eng.}}
+@STRING{TODS = {ACM Trans.\ on Database Systems}}
+@STRING{TPDB = {Technologie f\"{u}r Parallele Datenbanksysteme --- Bericht zum Workshop}}
+@STRING{TSE = {IEEE Trans.\ on Software Eng.}}
+@STRING{TC = {IEEE Trans.\ on Computers}}
+@STRING{TUCINFO = {Technische Universit\"{a}t Clausthal, Institut f\"{u}r Informatik}}
+@STRING{TUMINFO = {Technische Universit\"{a}t M\"{u}nchen, Institut f\"{u}r Informatik}}
+@STRING{UCLACS = {Computer Science Department, University of California at Los Angeles}}
+@STRING{VIEWEG = {Friedr.\ Vieweg und Sohn}}
+@STRING{VIEWEGAD = {Braunschweig/Wiesbaden}}
+@STRING{VLDB_ = {Proc.\ of the Int'l.\ Conf.\ on Very Large Data Bases}}
+@STRING{VLDB = {VLDB}}
+@STRING{VLDBJOU = {The VLDB Journal}}
+@STRING{WILEY = {John Wiley and Sons}}
+@STRING{WILEYAD = {New York, USA}}
+@STRING{WISCCS = {University of Wisconsin-Madison, Computer Science Department}}
+@STRING{WITS = {Proc.\ of the Workshop on Information Technologies and Systems}}
+@STRING{TCCA = {IEEE Technical Committee on Computer Architecture newsletter}}
+@STRING{XX = {}}
+
+
+@inproceedings{DBLP:conf/vldb/ChaudhuriN97,
+  author    = {Surajit Chaudhuri and
+               Vivek R. Narasayya},
+  title     = {{An Efficient Cost-Driven Index Selection Tool for Microsoft
+               SQL Server}},
+  booktitle = {VLDB},
+  year      = {1997},
+  pages     = {146-155},
+  ee        = {http://www.vldb.org/conf/1997/P146.PDF},
+  crossref  = {DBLP:conf/vldb/97},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/sigmod/ChaudhuriN98,
+  author    = {Surajit Chaudhuri and
+               Vivek R. Narasayya},
+  title     = {{AutoAdmin ``What-if'' Index Analysis Utility}},
+  booktitle = {SIGMOD Conference},
+  year      = {1998},
+  pages     = {367-378},
+  ee        = {http://doi.acm.org/10.1145/276304.276337},
+  crossref  = {DBLP:conf/sigmod/98, DBLP:conf/sigmod/98},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/vldb/AgrawalCN00,
+  author    = {Sanjay Agrawal and
+               Surajit Chaudhuri and
+               Vivek R. Narasayya},
+  title     = {{Automated Selection of Materialized Views and Indexes in
+               SQL Databases}},
+  booktitle = {VLDB},
+  year      = {2000},
+  pages     = {496-505},
+  ee        = {http://www.vldb.org/conf/2000/P496.pdf},
+  crossref  = {DBLP:conf/vldb/2000},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/sigmod/BrunoC05,
+  author    = {Nicolas Bruno and
+               Surajit Chaudhuri},
+  title     = {{Automatic Physical Database Tuning: A Relaxation-based Approach}},
+  booktitle = {SIGMOD Conference},
+  year      = {2005},
+  pages     = {227-238},
+  ee        = {http://doi.acm.org/10.1145/1066157.1066184},
+  crossref  = {DBLP:conf/sigmod/2005},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/sigmod/ChaudhuriN98a,
+  author    = {Surajit Chaudhuri and
+               Vivek R. Narasayya},
+  title     = {{Microsoft Index Tuning Wizard for SQL Server 7.0}},
+  booktitle = {SIGMOD Conference},
+  year      = {1998},
+  pages     = {553-554},
+  ee        = {http://doi.acm.org/10.1145/276304.276378},
+  crossref  = {DBLP:conf/sigmod/98, DBLP:conf/sigmod/98},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/vldb/AgrawalCKMNS04,
+  author    = {Sanjay Agrawal and
+               Surajit Chaudhuri and
+               Lubor Koll{\'a}r and
+               Arunprasad P. Marathe and
+               Vivek R. Narasayya and
+               Manoj Syamala},
+  title     = {{Database Tuning Advisor for Microsoft SQL Server 2005}},
+  booktitle = {VLDB},
+  year      = {2004},
+  pages     = {1110-1121},
+  crossref  = {DBLP:conf/vldb/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/vldb/DagevilleDDYZZ04,
+  author    = {Beno\^{\i}t Dageville and
+               Dinesh Das and
+               Karl Dias and
+               Khaled Yagoub and
+               Mohamed Za\"{\i}t and
+               Mohamed Ziauddin},
+  title     = {{Automatic SQL Tuning in Oracle 10g}},
+  booktitle = {VLDB},
+  year      = {2004},
+  pages     = {1098-1109},
+  ee        = {http://www.vldb.org/conf/2004/IND4P2.PDF},
+  crossref  = {DBLP:conf/vldb/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/vldb/ZilioRLLSGF04,
+  author    = {Daniel C. Zilio and
+               Jun Rao and
+               Sam Lightstone and
+               Guy M. Lohman and
+               Adam J. Storm and
+               Christian Garcia-Arellano and
+               Scott Fadden},
+  title     = {{DB2 Design Advisor: Integrated Automatic Physical Database
+               Design}},
+  booktitle = {VLDB},
+  year      = {2004},
+  pages     = {1087-1097},
+  ee        = {http://www.vldb.org/conf/2004/IND4P1.PDF},
+  crossref  = {DBLP:conf/vldb/2004},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/sigmod/SchnaitterAMP06,
+  author    = {Karl Schnaitter and
+               Serge Abiteboul and
+               Tova Milo and
+               Neoklis Polyzotis},
+  title     = {{COLT: continuous on-line tuning}},
+  booktitle = {SIGMOD Conference},
+  year      = {2006},
+  pages     = {793-795},
+  ee        = {http://doi.acm.org/10.1145/1142473.1142592},
+  crossref  = {DBLP:conf/sigmod/2006},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/icde/BrunoC07,
+  author    = {Nicolas Bruno and
+               Surajit Chaudhuri},
+  title     = {{An Online Approach to Physical Design Tuning}},
+  booktitle = {ICDE},
+  year      = {2007},
+  pages     = {826-835},
+  ee        = {http://doi.ieeecomputersociety.org/10.1109/ICDE.2007.367928},
+  crossref  = {DBLP:conf/icde/2007},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/icde/LuhringSSS07,
+  author    = {Martin L{\"u}hring and
+               Kai-Uwe Sattler and
+               Karsten Schmidt and
+               Eike Schallehn},
+  title     = {{Autonomous Management of Soft Indexes}},
+  booktitle = {ICDE Workshops},
+  year      = {2007},
+  pages     = {450-458},
+  ee        = {http://dx.doi.org/10.1109/ICDEW.2007.4401028},
+  crossref  = {DBLP:conf/icde/2007w},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{DBLP:journals/pvldb/GraefeHIKM12,
+  author    = {Goetz Graefe and
+               Felix Halim and
+               Stratos Idreos and
+               Harumi A. Kuno and
+               Stefan Manegold},
+  title     = {{Concurrency Control for Adaptive Indexing}},
+  journal   = {PVLDB},
+  volume    = {5},
+  number    = {7},
+  year      = {2012},
+  pages     = {656-667},
+  ee        = {http://vldb.org/pvldb/vol5/p656_goetzgraefe_vldb2012.pdf},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{DBLP:journals/pvldb/HalimIKY12,
+  author    = {Felix Halim and
+               Stratos Idreos and
+               Panagiotis Karras and
+               Roland H. C. Yap},
+  title     = {{Stochastic Database Cracking: Towards Robust Adaptive Indexing
+               in Main-Memory Column-Stores}},
+  journal   = {PVLDB},
+  volume    = {5},
+  number    = {6},
+  year      = {2012},
+  pages     = {502-513},
+  ee        = {http://vldb.org/pvldb/vol5/p502_felixhalim_vldb2012.pdf},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{DBLP:journals/pvldb/IdreosMKG11,
+  author    = {Stratos Idreos and
+               Stefan Manegold and
+               Harumi A. Kuno and
+               Goetz Graefe},
+  title     = {{Merging What's Cracked, Cracking What's Merged: Adaptive
+               Indexing in Main-Memory Column-Stores}},
+  journal   = {PVLDB},
+  volume    = {4},
+  number    = {9},
+  year      = {2011},
+  pages     = {585-597},
+  ee        = {http://www.vldb.org/pvldb/vol4/p586-idreos.pdf},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/tpctc/GraefeIKM10,
+  author    = {Goetz Graefe and
+               Stratos Idreos and
+               Harumi A. Kuno and
+               Stefan Manegold},
+  title     = {{Benchmarking Adaptive Indexing}},
+  booktitle = {TPCTC},
+  year      = {2010},
+  pages     = {169-184},
+  ee        = {http://dx.doi.org/10.1007/978-3-642-18206-8_13},
+  crossref  = {DBLP:conf/tpctc/2010},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/sigmod/IdreosKM09,
+  author    = {Stratos Idreos and
+               Martin L. Kersten and
+               Stefan Manegold},
+  title     = {{Self-Organizing Tuple Reconstruction in Column-Stores}},
+  booktitle = {SIGMOD Conference},
+  year      = {2009},
+  pages     = {297-308},
+  ee        = {http://doi.acm.org/10.1145/1559845.1559878},
+  crossref  = {DBLP:conf/sigmod/2009},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/cidr/IdreosKM07,
+  author    = {Stratos Idreos and
+               Martin L. Kersten and
+               Stefan Manegold},
+  title     = {{Database Cracking}},
+  booktitle = {CIDR},
+  year      = {2007},
+  pages     = {68-78},
+  ee        = {http://www.cidrdb.org/cidr2007/papers/cidr07p07.pdf},
+  crossref  = {DBLP:conf/cidr/2007},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/sigmod/IdreosKM07,
+  author    = {Stratos Idreos and
+               Martin L. Kersten and
+               Stefan Manegold},
+  title     = {{Updating a Cracked Database}},
+  booktitle = {SIGMOD Conference},
+  year      = {2007},
+  pages     = {413-424},
+  ee        = {http://doi.acm.org/10.1145/1247480.1247527},
+  crossref  = {DBLP:conf/sigmod/2007},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{DBLP:conf/edbt/GraefeK10,
+  author    = {Goetz Graefe and
+               Harumi A. Kuno},
+  title     = {{Self-Selecting, Self-Tuning, Incrementally Optimized Indexes}},
+  booktitle = {EDBT},
+  year      = {2010},
+  pages     = {371-381},
+  ee        = {http://doi.acm.org/10.1145/1739041.1739087},
+  crossref  = {DBLP:conf/edbt/2010},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{Copeland:1985:DSM:318898.318923,
+ author = {Copeland, George P. and Khoshafian, Setrag N.},
+ title = {A Decomposition Storage Model},
+ booktitle = {SIGMOD Conference},
+ year = {1985},
+ pages = {268--279}
+} 
+
+@misc{SkyServer,
+ author = "",
+ note = "Sloan Digital Sky Survey (SkyServer). http://cas.sdss.org/."
+} 
+
+@misc{tpch,
+ author = "",
+ note = "TPC Benchmark H. http://www.tpc.org/tpch/."
+} 
+
+@article{CrackRepeat,
+  title    = {The Uncracked Pieces in Database Cracking},
+  author     = {Felix Martin Schuhknecht and Alekh Jindal and Jens Dittrich},
+  journal = {PVLDB},
+  year      = {2014}
+}
+
+
+@article{Hail,
+  author     = {Stefan Richter and Jorge-Arnulfo Quiané-Ruiz and Stefan Schuh and Jens Dittrich},
+  title    = {Towards Zero-Overhead Static and Adaptive Indexing in Hadoop},
+  journal = {VLDBJ},
+  year      = {2013}
+}
+
+@article{Ozsu:1996:DPD:234313.234368,
+ author = {M. Tamer \"{O}zsu and  Patrick Valduriez},
+ title = {Distributed and Parallel Database Systems},
+ journal = {ACM Computing Surveys},
+ year = {1996},
+ pages = {125-128}
+} 
+
+@article{DeWitt:1992:PDS:129888.129894,
+ author = {David DeWitt and Jim Gray},
+ title = {Parallel Database Dystems: The Future of High Performance Database Systems},
+ journal = {Communications of the ACM},
+ year = {1992},
+ pages = {85-98}
+} 
+
+@inproceedings{DBLP:conf/cidr/HarizopoulosA03,
+  author    = {Stavros Harizopoulos and Anastassia Ailamaki},
+  title     = {A Case for Staged Database Systems},
+  booktitle = {CIDR},
+  year      = {2003},
+}
+
+@inproceedings{DBLP:conf/sigmod/HarizopoulosSA05,
+  author    = {Stavros Harizopoulos and
+               Vladislav Shkapenyuk and
+               Anastassia Ailamaki},
+  title     = {QPipe: A Simultaneously Pipelined Relational Query Engine},
+  booktitle = {SIGMOD Conference},
+  year      = {2005},
+  pages     = {383-394},
+}
+
+@inproceedings{nodb,
+  author    = {Ioannis Alagiannis and
+               Renata Borovica and
+               Miguel Branco and
+               Stratos Idreos and
+               Anastasia Ailamaki},
+  title     = {NoDB: efficient query execution on raw data files},
+  booktitle = {SIGMOD Conference},
+  year      = {2012}
+}
+
+@article{exploration,
+  author    = {Martin L. Kersten and
+               Stratos Idreos and
+               Stefan Manegold and
+               Erietta Liarou},
+  title     = {The Researcher's Guide to the Data Deluge: Querying a Scientific
+               Database in Just a Few Seconds},
+  journal   = {PVLDB},
+  volume    = {4},
+  number    = {12},
+  year      = {2011},
+  pages     = {1474-1477}
+}
+
+@inproceedings{GuidedInteraction,
+  author    = {Arnab Nandi and H. V.Jagadish},
+  title     = {{Guided Interaction: Rethinking the Query-Result Paradigm}},
+  booktitle = {VLDB},
+  year      = {2011}
+}
+
+
+@inproceedings{UsableDatabases,
+ author = {Jagadish, H. V. and Chapman, Adriane and Elkiss, Aaron and Jayapandian, Magesh and Li, Yunyao and Nandi, Arnab and Yu, Cong},
+ title = {{Making database systems usable}},
+ booktitle = {SIGMOD},
+ year = {2007}
+ } 
+
+@inproceedings{RequirementsSciDB,
+author = {Michael Stonebraker and Jacek Becla and David J. DeWitt and Kian-Tat Lim and David Maier and Oliver Ratzesberger and Stanley B. Zdonik},
+title     = {{Requirements for Science Data Bases and SciDB}},
+booktitle = {CIDR},
+year      = {2009}
+}
+
+@article{MAD,
+ author = {Cohen, Jeffrey and Dolan, Brian and Dunlap, Mark and Hellerstein, Joseph M. and Welton, Caleb},
+ title = {{MAD skills: new analysis practices for big data}},
+ journal = {PVLDB},
+ volume = {2},
+ year = {2009},
+ pages = {1481--1492}
+} 
+
+@inproceedings{shark,
+  author    = {Cliff Engle and
+               Antonio Lupher and
+               Reynold Xin and
+               Matei Zaharia and
+               Michael J. Franklin and
+               Scott Shenker and
+               Ion Stoica},
+  title     = {Shark: fast data analysis using coarse-grained distributed
+               memory},
+  booktitle = {SIGMOD Conference},
+  year      = {2012},
+}
+
+
+@inproceedings{hyper,
+  author    = {Alfons Kemper and
+               Thomas Neumann},
+  title     = {HyPer: A hybrid OLTP{\&}OLAP main memory database system
+               based on virtual memory snapshots},
+  booktitle = {ICDE},
+  year      = {2011},
+}
+
+@inproceedings{swissbox,
+  author    = {Gustavo Alonso and
+               Donald Kossmann and
+               Timothy Roscoe},
+  title     = {SWissBox: An Architecture for Data Processing Appliances},
+  booktitle = {CIDR},
+  year      = {2011},
+  pages     = {32-37},
+}
+
+@article{shareddb,
+  author    = {Georgios Giannikis and
+               Gustavo Alonso and
+               Donald Kossmann},
+  title     = {SharedDB: Killing One Thousand Queries With One Stone},
+  journal   = {PVLDB},
+  volume    = {5},
+  number    = {6},
+  year      = {2012},
+  pages     = {526-537},
+}
+
+@inproceedings{cod,
+  author    = {Jana Giceva and
+               Tudor-Ioan Salomie and
+               Adrian Sch{\"u}pbach and
+               Gustavo Alonso and
+               Timothy Roscoe},
+  title     = {COD: Database / Operating System Co-Design},
+  booktitle = {CIDR},
+  year      = {2013},
+}
+
+@inproceedings{hinge,
+  author    = {Udayan Khurana and
+               Amol Deshpande},
+  title     = {HiNGE: enabling temporal network analytics at scale},
+  booktitle = {SIGMOD Conference},
+  year      = {2013},
+}
+
+@article{elastras,
+  author    = {Sudipto Das and
+               Divyakant Agrawal and
+               Amr {El Abbadi}},
+  title     = {ElasTraS: An elastic, scalable, and self-managing transactional
+               database for the cloud},
+  journal   = {ACM Trans. Database Syst.},
+  volume    = {38},
+  number    = {1},
+  year      = {2013},
+  pages     = {5},
+}
+
+@inproceedings{dbseer,
+  author    = {Barzan Mozafari and
+               Carlo Curino and
+               Samuel Madden},
+  title     = {DBSeer: Resource and Performance Prediction for Building
+               a Next Generation Database Cloud},
+  booktitle = {CIDR},
+  year      = {2013},
+}
+
+
+@inproceedings{crowddb,
+  author    = {Michael J. Franklin and
+               Donald Kossmann and
+               Tim Kraska and
+               Sukriti Ramesh and
+               Reynold Xin},
+  title     = {CrowdDB: answering queries with crowdsourcing},
+  booktitle = {SIGMOD Conference},
+  year      = {2011},
+}
+
+@inproceedings{datacuration,
+  author    = {Michael Stonebraker and
+               Daniel Bruckner and
+               Ihab F. Ilyas and
+               George Beskales and
+               Mitch Cherniack and
+               Stanley B. Zdonik and
+               Alexander Pagan and
+               Shan Xu},
+  title     = {Data Curation at Scale: The Data Tamer System},
+  booktitle = {CIDR},
+  year      = {2013},
+}
+
+@inproceedings{crowdq,
+  author    = {Gianluca Demartini and
+               Beth Trushkowsky and
+               Tim Kraska and
+               Michael J. Franklin},
+  title     = {CrowdQ: Crowdsourced Query Understanding},
+  booktitle = {CIDR},
+  year      = {2013},
+}
+
+@inproceedings{bitweaving,
+  author    = {Yinan Li and
+               Jignesh M. Patel},
+  title     = {BitWeaving: fast scans for main memory data processing},
+  booktitle = {SIGMOD Conference},
+  year      = {2013},
+}
+
+@article{hstore,
+  author    = {Robert Kallman and
+               Hideaki Kimura and
+               Jonathan Natkins and
+               Andrew Pavlo and
+               Alex Rasin and
+               Stanley B. Zdonik and
+               Evan P. C. Jones and
+               Samuel Madden and
+               Michael Stonebraker and
+               Yang Zhang and
+               John Hugg and
+               Daniel J. Abadi},
+  title     = {H-store: a high-performance, distributed main memory transaction
+               processing system},
+  journal   = {PVLDB},
+  volume    = {1},
+  number    = {2},
+  year      = {2008},
+  pages     = {1496-1499},
+}
+
+
+@inproceedings{energypartitioning,
+  author    = {Lisa Wu and
+               Raymond J. Barker and
+               Martha A. Kim and
+               Kenneth A. Ross},
+  title     = {Navigating big data with high-throughput, energy-efficient
+               data partitioning},
+  booktitle = {ISCA},
+  year      = {2013},
+}
+
+@inproceedings{earl,
+  author    = {Nikolay Laptev and
+               Kai Zeng and
+               Carlo Zaniolo},
+  title     = {Very fast estimation for result and accuracy of big data
+               analytics: The EARL system},
+  booktitle = {ICDE},
+  year      = {2013},
+}
+
+@article{hadoop+,
+  author    = {Jens Dittrich and
+               Jorge-Arnulfo Quian{\'e}-Ruiz and
+               Alekh Jindal and
+               Yagiz Kargin and
+               Vinay Setty and
+               J{\"o}rg Schad},
+  title     = {Hadoop++: Making a Yellow Elephant Run Like a Cheetah (Without
+               It Even Noticing)},
+  journal   = {PVLDB},
+  volume    = {3},
+  number    = {1},
+  year      = {2010},
+  pages     = {518-529},
+}
+
+@article{hazy,
+  author    = {Arun Kumar and
+               Feng Niu and
+               Christopher R{\'e}},
+  title     = {Hazy: making it easier to build and maintain big-data analytics},
+  journal   = {Commun. ACM},
+  volume    = {56},
+  number    = {3},
+  year      = {2013},
+  pages     = {40-49},
+}
+
+@inproceedings{BlinkDB,
+  author    = {Sameer Agarwal and
+               Barzan Mozafari and
+               Aurojit Panda and
+               Henry Milner and
+               Samuel Madden and
+               Ion Stoica},
+  title     = {BlinkDB: queries with bounded errors and bounded response
+               times on very large data},
+  booktitle = {EuroSys},
+  year      = {2013}
+}
+
+@MANUAL{MonetDB,
+  title  = {MonetDB},
+  note   = {\url{http://monetdb.cwi.nl/}},
+  key    = {ZZZ},
+}
+
+@MANUAL{Tesseract,
+  title  = {Tesseract},
+  note   = {\url{https://en.wikipedia.org/wiki/Tesseract}},
+  key    = {ZZZ},
+}
+
+@article{mc1,
+  author    = {Nikos Hardavellas and
+               Michael Ferdman and
+               Babak Falsafi and
+               Anastasia Ailamaki},
+  title     = {Near-Optimal Cache Block Placement with Reactive Nonuniform
+               Cache Architectures},
+  journal   = {IEEE Micro},
+  volume    = {30},
+  number    = {1},
+  year      = {2010},
+  pages     = {29},
+
+}
+
+@inproceedings{mc2,
+  author    = {Ryan Johnson and
+               Ippokratis Pandis and
+               Nikos Hardavellas and
+               Anastasia Ailamaki and
+               Babak Falsafi},
+  title     = {Shore-MT: a scalable storage manager for the multicore era},
+  booktitle = {EDBT},
+  year      = {2009},
+  pages     = {24-35},
+}
+
+@article{EgenhoferF91,
+  author    = {Max J. Egenhofer and
+               Robert D. Franzosa},
+  title     = {{Point Set Topological Relations}},
+  journal   = {International Journal of GIS},
+  volume    = {5},
+  number    = {2},
+  year      = {1991},
+  pages     = {161-174}
+}
+
+@book{Samet:book,
+ author = {Samet, Hanan},
+ title = {{Foundations of Multidimensional and Metric Data Structures (The Morgan Kaufmann Series in Computer Graphics and Geometric Modeling)}},
+ year = {2005},
+ publisher = {Morgan Kaufmann Publishers Inc.},
+ address = {San Francisco, CA, USA},
+}
+
+@article{DBLP:journals/cacm/Bentley75,
+  author    = {Jon Louis Bentley},
+  title     = {Multidimensional Binary Search Trees Used for Associative
+               Searching},
+  journal   = {CACM},
+  volume    = {18},
+  number    = {9},
+  year      = {1975},
+  pages     = {509-517},
+}
+@article{DBLP:journals/tods/NievergeltHS84,
+  author    = {J{\"u}rg Nievergelt and
+               Hans Hinterberger and
+               Kenneth C. Sevcik},
+  title     = {{The Grid File: An Adaptable, Symmetric Multikey File Structure}},
+  journal   = {ACM TODS},
+  volume    = {9},
+  number    = {1},
+  year      = {1984},
+  pages     = {38-71}
+} 
+
+@inproceedings{DBLP:conf/sigmod/Robinson81,
+  author    = {John T. Robinson},
+  title     = {{The K-D-B-Tree: A Search Structure For Large Multidimensional
+               Dynamic Indexes}},
+  booktitle = {SIGMOD},
+  year      = {1981},
+  pages     = {10-18}
+}
+@article{DBLP:journals/acta/FinkelB74,
+  author    = {Raphael A. Finkel and
+               Jon Louis Bentley},
+  title     = {{Quad Trees: A Data Structure for Retrieval on Composite
+               Keys}},
+  journal   = {Acta Informatica},
+  volume    = {4},
+  year      = {1974},
+  pages     = {1-9}
+}
+
+@book{IntroductionAlgorithms,
+  author    = {Thomas H. Cormen and
+               Charles E. Leiserson and
+               Ronald L. Rivest and
+               Clifford Stein},
+  title     = {{Introduction to Algorithms (3. ed.)}},
+  publisher = {MIT Press},
+  year      = {2009},
+  pages     = {I-XIX, 1-1292},
+}
+@book{kellerer2004knapsack,
+  title={{Knapsack Problems}},
+  author={Kellerer, H. and Pferschy, U. and Pisinger, D.},
+  year={2004},
+  publisher={Springer}
+}
+
+@article{CrackingTransactions,
+  author    = {Goetz Graefe and
+               Felix Halim and
+               Stratos Idreos and
+               Harumi A. Kuno and
+               Stefan Manegold and
+               Bernhard Seeger},
+  title     = {{Transactional Support for Adaptive Indexing}},
+  journal   = {VLDBJ},
+  volume    = {23},
+  number    = {2},
+  year      = {2014},
+  pages     = {303--328}
+}
+
+@phdthesis{CrackingThesis,
+   author = {Stratos Idreos},
+   title = {{Database Cracking: Towards Auto-tuning Database Kernels}},
+   school = {CWI, The Netherlands},
+   month = jun,
+   year = {2010}
+}
+
+@inproceedings{IndexingKeys,
+author = {Goetz Graefe and Harumi Kuno},
+title = {{Adaptive Indexing for Relational Keys}},
+booktitle ={ICDE Workshops},
+year = {2010},
+pages = {69-74}
+}
+
+@article{quicksort,
+ author = {Hoare, C. A. R.},
+ title = {Algorithm 64: Quicksort},
+ journal = {CACM},
+ volume = {4},
+ number = {7},
+ year = {1961},
+ publisher = {ACM}
+} 
+
+@phdthesis{KnapsackThesis,
+	author = {Rafael Parra-Hernandez},
+	title = {{A Study of Knapsack-Based Admission and Allocation Techniques}},
+	school = {University of Victoria, Canada},
+	year = {2005}
+}
+@article{Parra-Hernandez:2005:NHS:2229265.2230064,
+	author = {Parra-Hernandez, R. and Dimopoulos, N. J.},
+	title = {{A New Heuristic for Solving the Multichoice Multidimensional Knapsack Problem}},
+	journal = {IEEE Transactions on Systems, Man, and Cybernetics},
+	volume = {35},
+	number = {5},
+	pages = {708--717},
+	year = {2005},
+}
+
+@article{Bentley:1975:MBS:361002.361007,
+ author = {Bentley, Jon Louis},
+ title = {Multidimensional Binary Search Trees Used for Associative Searching},
+ journal = {Commun. ACM},
+ volume = {18},
+ number = {9},
+ year = {1975},
+ pages = {509--517},
+} 
+
+@inproceedings {efficient_cracking,
+	author = {Holger Pirk and Eleni Petraki and Stratos Idreos and Stefan Manegold and Martin L. Kersten},
+	title = {{Database Cracking: Fancy Scan, not Poor Man{\textquoteright}s Sort!}},
+	booktitle = {DaMoN},
+	year = {2014}
+}
+@inproceedings{Here_are,
+  author = {Idreos, Stratos and Alagiannis, Ioannis and Johnson, Ryan and Ailamaki, Anastasia},
+  booktitle = {CIDR},
+  pages = {57-68},
+  title = {{Here are my Data Files. Here are my Queries. Where are my Results?}},
+  year = {2011}
+}
+@inproceedings{dbtouch_1,
+  author    = {Stratos Idreos and
+               Erietta Liarou},
+  title     = {{dbTouch: Analytics at your Fingertips}},
+  booktitle = {{CIDR}},
+  year      = {2013}
+} 
+@inproceedings{dbtouch_2,
+  author    = {Erietta Liarou and
+               Stratos Idreos},
+  title     = {{dbTouch in Action Database Kernels for Touch-based Data Exploration}},
+  booktitle = {{ICDE}},
+  pages     = {1262-1265},
+  year      = {2014}
+}
+

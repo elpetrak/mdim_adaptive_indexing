@@ -1,0 +1,28 @@
+\section{Related Work}
+\label{sec:related_work}
+
+In this section we briefly discuss state-of-the-art indexing methods for handling multidimensional point data.
+
+\textbf{Range Search in Data Points.}
+One of the most basic data operations is that of filtering data that qualify a query predicate.
+The query is in the form of a multidimensional range $R$ and it says ``find me the data points in the database that belong to $R$''.
+The main idea in state-of-the-art multidimensional indexes is to divide the whole space into subregions \cite{Samet:book}.
+
+ 
+Our work follows the same high level principles, i.e., data split, but it is the first to introduce  an adaptive indexing mechanism driven by query predicates.  
+In all previous work, the index is built in one step a priori and no queries may be processed until the index is ready. 
+On the contrary, in our work, query processing and index building are interleaved, resulting in a drastically reduced data to query time.
+
+
+
+
+
+
+\textbf{Multidimensional Adaptive Indexing.} Even though in this paper we follow the same philosophy as in database cracking, our work is the first to design an adaptive index for multidimensional data.% processing and range search queries during query time.
+Contrary to working with unidimensional arrays as in column-store relational databases in the case of database cracking, our work is based on multidimensional arrays,  which are suited for multidimensional indexing, where we index more than one columns at a time.  
+Columns that are not indexed, can still be aligned using sideways cracking \cite{DBLP:conf/sigmod/IdreosKM09} which has been proposed in order to handle late tuple reconstruction in an adaptive column-store.
+The concepts that have appeared in past adaptive indexing work apply here as well.
+For example, updates and concurrency control can be handled exactly as in \cite{DBLP:journals/pvldb/GraefeHIKM12, CrackingTransactions, DBLP:conf/sigmod/IdreosKM07}.
+Contrary to state-of-the-art multidimensional indexing work, initialization cost is kept low, bringing the ability to query the data set much sooner.   
+We show both the significant bottleneck faced by state-of-the-art indexing as we grow to large data,
+as well as the drastic improvement that adaptive indexing brings.
